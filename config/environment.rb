@@ -15,6 +15,6 @@ Dir[File.join(File.dirname(__FILE__), "../lib/support", "*.rb")].each {|f| requi
 DBRegistry[ENV["ACTIVE_RECORD_ENV"]].connect!
 DB = ActiveRecord::Base.connection
 
-if ENV["ACTIVE_RECORD_ENV"] == "test"
-  ActiveRecord::Migration.verbose = false
-end
+# if ENV["ACTIVE_RECORD_ENV"] == "test"
+#   ActiveRecord::Migration.verbose = true
+# end
