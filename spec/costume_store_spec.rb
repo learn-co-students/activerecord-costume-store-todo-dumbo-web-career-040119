@@ -24,7 +24,7 @@ describe "CostumeStore" do
   end
 
   it "has an employees count" do
-    binding.pry
+    # binding.pry
     rickys = CostumeStore.create(
       name: "Ricky’s",
       location: "375 Broadway",
